@@ -1,1 +1,34 @@
-sessionAccess
+<div class="uk-section uk-section-default">
+	<div>
+		<img data-src="assets/logo_mini.png" width="50" height="50" alt="" uk-img>
+	 	<span class="uk-text-secondary uk-margin-remove-bottom uk-text-bottom">
+	    <span class="uk-text-large ">Shop</span>
+	    <span>店舗案内</span>
+	    </span>
+	</div>
+	<hr class="uk-margin-remove-top" />
+	<div class="uk-height-large uk-child-width-1-2" uk-grid>
+		<div class="uk-text-center uk-height-1-1 uk-padding">
+			<div class="uk-background-contain uk-height-small" style="background-image: url(assets/Home_1.png);"></div>
+			<p>XXXX株式会社</p>
+			<a>00-0000-0000</a>
+			<p class="uk-margin-remove-bottom">000-0000</p>
+			<p class="uk-margin-remove-top">XX県YYY市ZZZ町</p>
+			<p class="uk-margin-remove-bottom">WW駅</p>
+			<p class="uk-margin-remove-top">V口より徒歩M分</p>
+		</div>
+		<div id='map' class="uk-height-1-1"></div>
+	</div>
+</div>
+
+<!--GoogleAPI導入用JS-->
+<!--後日移植すること-->
+<script>
+function initMap(){
+  let map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: 35.681236, lng: 139.767125},
+  zoom: 16
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8RedHXTqwYP62VlZVwxzCTCEPfZN4fGk&callback=initMap" async defer></script>
