@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact_group: one
+  customer: one
+  details: MyText
+  is_checked: false
+
+two:
+  contact_group: two
+  customer: two
+  details: MyText
+  is_checked: false
