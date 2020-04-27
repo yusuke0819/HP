@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reform_case: one
+  befor: MyString
+  after: MyString
+
+two:
+  reform_case: two
+  befor: MyString
+  after: MyString
