@@ -46,11 +46,9 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
   end
 
   create_table "reform_cases", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "reform_group_id"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["reform_group_id"], name: "index_reform_cases_on_reform_group_id"
   end
 
   create_table "reform_groups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -68,5 +66,4 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
 
   add_foreign_key "contacts", "contact_groups"
   add_foreign_key "contacts", "customers"
-  add_foreign_key "reform_cases", "reform_groups"
 end
