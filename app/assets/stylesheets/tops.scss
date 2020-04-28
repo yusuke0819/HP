@@ -18,19 +18,20 @@ nav ul {
     z-index:9999;
     font-size: 22px;
 	position: fixed;
-	width: 100%;
+    width: 100%;
 }
 .site-header-band{
     background-color: black;
     color: white;
     font-size: small;
     width: 100%;
+    margin: 0px;
 }
 .site-header-contents{
 	background:  rgb(255, 255, 255);
 	display: flex;
 	padding: 20px 20px;
-	justify-content: space-between;
+    justify-content: space-between;
 }
 .site-logo img{
     background:  white;
@@ -42,7 +43,7 @@ nav ul {
     display: flex;
 }
 .hnav li{
-    margin: 0px 20px;
+    margin: 10px 20px 0px 20px;
 }
 .hnav_menu1{
     display: flex;
@@ -51,6 +52,7 @@ nav ul {
     display: block;
     text-align: left;
     font-size: 80%;
+    margin: 0px;
 }
 .hnav_menu2 img{
     width: 17px;
@@ -84,7 +86,9 @@ nav ul {
 }
 .top-page-word1{
     position: absolute;
+    border: 0 none; 
     color: rgb(255, 252, 205);
+    background-color: rgba(0, 0, 0, 0);
     font-weight: bold;
     font-size: 4em;
     font-family :Quicksand, sans-serif;
@@ -94,7 +98,9 @@ nav ul {
 }
 .top-page-word2{
     position: absolute;
+    border: 0 none; 
     color: rgb(255, 252, 205);
+    background-color: rgba(0, 0, 0, 0);
     font-weight: bold;
     font-size: 3em;
     font-family :Quicksand, sans-serif;

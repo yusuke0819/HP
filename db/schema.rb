@@ -29,14 +29,10 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
   end
 
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "contact_group_id"
-    t.bigint "customer_id"
     t.text "details"
     t.boolean "is_checked", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["contact_group_id"], name: "index_contacts_on_contact_group_id"
-    t.index ["customer_id"], name: "index_contacts_on_customer_id"
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -66,4 +62,6 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
 
   add_foreign_key "contacts", "contact_groups"
   add_foreign_key "contacts", "customers"
+  add_foreign_key "reform_cases", "reform_groups"
+  add_foreign_key "reform_images", "reform_cases"
 end
