@@ -29,10 +29,14 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
   end
 
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "contact_group_id"
+    t.bigint "customer_id"
     t.text "details"
     t.boolean "is_checked", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["contact_group_id"], name: "index_contacts_on_contact_group_id"
+    t.index ["customer_id"], name: "index_contacts_on_customer_id"
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -42,9 +46,11 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
   end
 
   create_table "reform_cases", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "reform_group_id"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["reform_group_id"], name: "index_reform_cases_on_reform_group_id"
   end
 
   create_table "reform_groups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -54,10 +60,12 @@ ActiveRecord::Schema.define(version: 2020_04_27_044956) do
   end
 
   create_table "reform_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "reform_case_id"
     t.string "befor", default: "error.png"
     t.string "after", default: "error.png"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["reform_case_id"], name: "index_reform_images_on_reform_case_id"
   end
 
   add_foreign_key "contacts", "contact_groups"
