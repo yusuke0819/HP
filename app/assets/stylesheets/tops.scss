@@ -119,3 +119,39 @@ nav ul {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.advantage ul{
+    list-style:none;
+}
+.advantage-right{
+    display: block;
+}
+.advantage-comment{
+    border: none;
+    font-size: 2em;
+    color: black;
+    margin-top: 0px;
+}
+.advantage-table{
+    border: 1px rgb(130, 220, 255) solid;
+    margin-left: 50px;
+    background-color: rgb(130, 220, 255);
+}
+.advantage-cols{
+    border: 1px gray dotted;
+    width: 500px;
+    height: 95px;
+    background-color: white;
+}
+.advantage-logo{
+    width: 250px;
+}
+.advantage-num{
+    font-size: x-large;
+    border: 1px;
+    color: white;
+    border-color: rgb(130, 220, 255);
+    background: gray;
+}
+.advantage-img{
+    display: block;
+}
