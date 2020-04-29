@@ -26,16 +26,17 @@ nav ul {
     font-size: small;
     width: 100%;
     margin: 0px;
+    padding: 0px;
 }
 .site-header-contents{
 	background:  rgb(255, 255, 255);
 	display: flex;
-	padding: 20px 20px;
+    padding: 0px 20px;
     justify-content: space-between;
 }
 .site-logo img{
     background:  white;
-	height: 30px;
+	height: 20px;
     width: auto;
     font-size: 50%;
 }
@@ -44,15 +45,18 @@ nav ul {
 }
 .hnav li{
     margin: 10px 20px 0px 20px;
+    padding: 0px;
 }
 .hnav_menu1{
     display: flex;
+    margin: 0px;
 }
 .hnav_menu2{
     display: block;
     text-align: left;
     font-size: 80%;
     margin: 0px;
+    
 }
 .hnav_menu2 img{
     width: 17px;
@@ -63,6 +67,7 @@ nav ul {
 .hnav_menu3{
     display: flex;
     text-align: right;
+    margin-top: 10px;
 }
 .hnav_menu3 img{
     width: 50px;
